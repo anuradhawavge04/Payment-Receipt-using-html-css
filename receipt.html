@@ -84,10 +84,25 @@
              margin-left: auto;
         }
 
-        .signature{
-            text-align: right;
-            margin-top: 100px;
-        }
+        .sign-stamp{
+        text-align: right;
+        margin-top: 30px;
+        border-bottom: 1px dashed gray;
+        margin-bottom:30px;
+      }
+
+      .stamp-img{
+        margin-bottom:-60px;
+        transform:rotate(-20deg);
+      }
+
+      .receipt-footer{
+        background-color:#4d79ff ;
+        text-align: center;
+        padding: 10px;
+        margin: 5px;
+      }
+
     </style>
 </head>
 
@@ -151,10 +166,17 @@
                 UPI
             </div>
         </div>
-         
+
+        <div class="sign-stamp">
+         <img src="stamp.png" height="150px"class="stamp-img"/>
         <p class="signature">Accountant signature</p>
+    </div>
+
+    <p class="footer-text">This is a computer generated receipt and does not require any signature.</p>
 
         <div class="receipt-footer">
+
+            <p>Thank You For Your Payment.</p>
 
         </div>
     </div>
