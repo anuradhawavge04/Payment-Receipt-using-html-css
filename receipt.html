@@ -1,11 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Receipt</title>
+    <style>
+        body {
+            background-color: #bfbfbf;
+        }
+
+        .receipt-container {
+            display: block;
+            width: 80%;
+            background-color: white;
+            margin: 10px auto;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid gray;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .receipt-container {
+            box-shadow: 0px 0px 10px 2px gray;
+        }
+
+        .receipt-header {
+            text-align: center;
+            border-bottom: 1px dashed #cccccc;
+        }
+
+        .receipt-header h2 {
+            color: gray;
+            font-size: 35px;
+            margin-top: 0;
+        }
+
+        .receipt-address {
+            text-align: right;
+            font-size: 15px;
+            font-weight: 700;
+            margin: 5px;
+        }
+
+        .Receipt-mobile {
+            text-align: right;
+            font-weight: 700;
+        }
+
+        .receipt-body {
+            display: block;
+            text-align: center;
+        }
+
+        .body-title {
+            text-align: center;
+            font-size: 30px;
+            margin: 40px auto;
+        }
+
+        .receipt-detail {
+            display: block;
+        }
+
+        .receipt-detail {
+            display: flex;
+            justify-content:space-evenly;
+            font-size: 20px;
+            margin: 20px auto;
+            width:50%;
+        }
+
+        .receipt-key {
+            color: gray;
+            width: 30%;
+            margin-right: auto;
+        }
+
+        .receipt-no {
+            color: black;
+            border-bottom: 1px dashed gray;
+            width: 30%;
+             margin-left: auto;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Payment Receipt</h1>
+    <div class="receipt-container">
+        <div class="receipt-header">
+            <img src="logo.png" height="100px" alt="Flipkart-logo" />
+            <h2>Microsoft</h2>
+
+            <p class="receipt-address">
+                807,New Delhi House,<br>
+                Barakhamba Road,<br>
+                New Delhi- 110001,<br>
+                India
+            </p>
+
+            <P class="Receipt-mobile">
+                +91-1234567898
+            </P>
+
+        </div>
+
+        <div class="receipt-body">
+            <h3 class="body-title">
+                Payment Receipt</h3>
+        </div>
+
+
+        <div class="receipt-detail">
+            <div class="receipt-key">
+                Receipt No.
+            </div>
+            <div class="receipt-no">
+                1234323443
+            </div>
+        </div>
+
+        <div class="receipt-detail">
+            <div class="receipt-key">
+                Payment Date
+            </div>
+            <div class="receipt-no">
+                25 May 2024
+            </div>
+        </div>
+
+        <div class="receipt-detail">
+            <div class="receipt-key">
+                Amount.
+            </div>
+            <div class="receipt-no">
+                15000-/
+            </div>
+        </div>
+
+        <div class="receipt-detail">
+            <div class="receipt-key">
+                Payment Mode
+            </div>
+            <div class="receipt-no">
+                UPI
+            </div>
+        </div>
+         
+        <p class="signature">Accountant signature</p>
+
+        <div class="receipt-footer">
+
+        </div>
+    </div>
+
 </body>
+
 </html>
